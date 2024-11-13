@@ -68,7 +68,6 @@ const visibleRoutes = computed(() => {
     return true;
   });
 });
-console.log(visibleRoutes.value);
 
 //  通过监听路由的方式 实现记录当前页面
 //  根据路由地址改变导航栏的高亮
