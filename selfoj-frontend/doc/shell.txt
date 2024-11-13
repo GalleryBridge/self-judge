@@ -1,0 +1,8 @@
+全局安装 openapi-typescript-codegen
+npm install -g openapi-typescript-codegen
+然后使用命令生成代码
+npx openapi --input http://localhost:8101/api/v2/api-docs --output ./generated --client axios
+如果没有全局安装 必须使用下面命令
+npx openapi-typescript-codegen --input http://localhost:8101/api/v2/api-docs --output ./generated
+
+npm prefix -g
