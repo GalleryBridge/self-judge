@@ -42,10 +42,9 @@
 <script setup lang="ts">
 import { routes } from "@/router/routes";
 import { useRouter } from "vue-router";
-import { computed, watch, ref } from "vue";
+import { computed, ref } from "vue";
 import { useStore } from "vuex";
 import checkAccess from "@/access/checkAccess";
-import AccessEnum from "@/access/accessEnum";
 
 const router = useRouter();
 
@@ -83,14 +82,6 @@ const doMenuClick = (key: string) => {
     path: key,
   });
 };
-
-setTimeout(() => {
-  //  这里的路径是 模块名 + 方法
-  store.dispatch("user/getLoginUser", {
-    userName: "admin",
-    userRole: AccessEnum.ADMIN,
-  });
-}, 3000);
 </script>
 
 <style scoped>

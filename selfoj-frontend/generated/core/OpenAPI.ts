@@ -20,9 +20,10 @@ export type OpenAPIConfig = {
 };
 
 export const OpenAPI: OpenAPIConfig = {
-  BASE: "http://localhost:8101/",
+  BASE: "http://localhost:8101",
   VERSION: "1.0",
-  WITH_CREDENTIALS: false,
+  //  自动携带cookie请求头
+  WITH_CREDENTIALS: true,
   CREDENTIALS: "include",
   TOKEN: undefined,
   USERNAME: undefined,
