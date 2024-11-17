@@ -24,8 +24,10 @@ import lombok.NoArgsConstructor;
 public class Question implements Serializable {
     /**
      * id
+     * 这里ID使用的是雪花算法
+     * 目的是为了防止用户按照ID爬虫
      */
-    @TableId(type = IdType.AUTO)
+    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
 
     /**

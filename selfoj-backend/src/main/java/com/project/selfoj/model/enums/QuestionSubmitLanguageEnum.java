@@ -1,23 +1,27 @@
 package com.project.selfoj.model.enums;
 
+import org.apache.commons.lang3.ObjectUtils;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.apache.commons.lang3.ObjectUtils;
 
 /**
- * 文件上传业务类型枚举
- *
+ * @Author: Laidor
+ * @Description: 题目提交编程语言枚举
+ * @Date:2024/11/17 下午 05:18
  */
-public enum FileUploadBizEnum {
+public enum QuestionSubmitLanguageEnum {
 
-    USER_AVATAR("用户头像", "user_avatar");
+    JAVA("Java", "Java"),
+    CPP("C++", "C++"),
+    GOLANG("GoLang", "GoLang");
 
     private final String text;
 
     private final String value;
 
-    FileUploadBizEnum(String text, String value) {
+    QuestionSubmitLanguageEnum(String text, String value) {
         this.text = text;
         this.value = value;
     }
@@ -37,11 +41,11 @@ public enum FileUploadBizEnum {
      * @param value
      * @return
      */
-    public static FileUploadBizEnum getEnumByValue(String value) {
+    public static QuestionSubmitLanguageEnum getEnumByValue(String value) {
         if (ObjectUtils.isEmpty(value)) {
             return null;
         }
-        for (FileUploadBizEnum anEnum : FileUploadBizEnum.values()) {
+        for (QuestionSubmitLanguageEnum anEnum : QuestionSubmitLanguageEnum.values()) {
             if (anEnum.value.equals(value)) {
                 return anEnum;
             }

@@ -116,6 +116,12 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question>
         return queryWrapper;
     }
 
+    /**
+     * 获取题目信息
+     * @param question
+     * @param request
+     * @return
+     */
     @Override
     public QuestionVo getQuestionVo(Question question, HttpServletRequest request) {
         QuestionVo questionVO = QuestionVo.objToVo(question);
@@ -130,6 +136,12 @@ public class QuestionServiceImpl extends ServiceImpl<QuestionMapper, Question>
         return questionVO;
     }
 
+    /**
+     * 分页获取题目信息
+     * @param questionPage
+     * @param request
+     * @return
+     */
     @Override
     public Page<QuestionVo> getQuestionVoPage(Page<Question> questionPage, HttpServletRequest request) {
         List<Question> questionList = questionPage.getRecords();
