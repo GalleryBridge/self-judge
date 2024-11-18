@@ -18,6 +18,8 @@
 - Arco Design 组件库
 - ESLint + Prettier + TS 前端工程化
 - Open API 前端API生成
+- Markdown 富文本编辑器
+- Monaco Editor 代码编辑器
 
 #### 后端
 
