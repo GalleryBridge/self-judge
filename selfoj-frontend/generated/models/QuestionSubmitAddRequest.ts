@@ -2,10 +2,9 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type UserAddRequest = {
-    userAccount?: string;
-    userAvatar?: string;
-    userName?: string;
-    userRole?: string;
+export type QuestionSubmitAddRequest = {
+    code?: string;
+    language?: string;
+    questionId?: number;
 };
 

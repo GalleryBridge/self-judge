@@ -2,14 +2,16 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-export type UserQueryRequest = {
+export type QuestionQueryRequest = {
+    answer?: string;
+    content?: string;
     current?: number;
     id?: number;
     pageSize?: number;
     sortField?: string;
     sortOrder?: string;
-    userName?: string;
-    userProfile?: string;
-    userRole?: string;
+    tags?: Array<string>;
+    title?: string;
+    userId?: number;
 };
 

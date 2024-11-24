@@ -6,6 +6,7 @@ import NoAuthView from "@/views/NoAuthView.vue";
 import LoginView from "@/views/user/LoginView.vue";
 import RegisterView from "@/views/user/RegisterView.vue";
 import UserLayout from "@/layouts/UserLayout.vue";
+import AddQuestionView from "@/views/question/AddQuestionView.vue";
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -32,6 +33,14 @@ export const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "浏览题目",
     component: HomeView,
+  },
+  {
+    path: "/question/add",
+    name: "创建题目",
+    component: AddQuestionView,
+    // meta: {
+    //   access: AccessEnum.ADMIN,
+    // },
   },
   {
     path: "/hide",

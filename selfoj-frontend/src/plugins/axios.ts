@@ -2,6 +2,7 @@
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
+axios.defaults.url = "http://localhost:8101";
 
 axios.interceptors.request.use(
   function (config) {
