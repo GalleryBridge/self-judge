@@ -6,3 +6,9 @@ npx openapi --input http://localhost:8101/api/v2/api-docs --output ./generated -
 npx openapi-typescript-codegen --input http://localhost:8101/api/v2/api-docs --output ./generated
 
 npm prefix -g
+
+Git 制表符问题
+git config --global core.autocrlf false
+如果出现了这种问题
+可以在项目根路径全局格式化代码
+右键根目录 Reformat Code
